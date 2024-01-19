@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+    <%- include('components/header', {title:title}); %>
+
+<div class="content">
+    <%- include('components/sidebar'); %>
+    <div class="notes">
+        <h2>Add note</h2>
+        <form action="/add-note" method="POST">
+            <div class="form-field">
+                <label for="text">
+                    title
+                </label>
+                <input type="text" id="text" placeholder="Note title" autocomplete="off"/>
+            </div>
+            <div class="form-field">
+                <label for="description">
+                    description
+                </label>
+                <textarea id="description" placeholder="Note description"></textarea>
+            </div>
+            <div class="form-field">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+body {
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+a {
+    color: #333333;
+}
+
+td {
+    border-bottom: solid 1px lightgrey;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar {
+    background: #eee;
+    padding: 20px;
+    width: 200px;
+
+}
+
+.sidebar .link {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.notes {
+    border-top: solid 2px lightgrey;
+    width: 600px;
+}
+
+.form-field {
+    margin: 30px 0;
+}
+
+.form-field label {
+    display: block;
+    font-size: 1rem;
+    color: #298ac7;
+}
+
+.form-field input::placeholder, .form-field textarea::placeholder {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.form-field input, .form-field textarea {
+    width: 400px;
+    padding: 5px;
+}
+
+.form-field textarea {
+    height: 100px;
+}
+
+input[type=submit] {
+    padding: 10px;
+    width: 100px;
+}
+
+.main-link {
+    text-decoration: none;
+}

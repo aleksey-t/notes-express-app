@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<%- include('components/header', {title:title}); %>
+
+<div class="content">
+  <%- include('components/sidebar'); %>
+  <div class="notes">
+    <h2>Homepage</h2>
+  </div>
+</div>
+</body>
+</html>

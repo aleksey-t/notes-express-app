@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<%- include('components/header', {title:title}); %>
+
+<div class="content">
+    <%- include('components/sidebar'); %>
+    <div class="notes">
+        <h2>All notes</h2>
+        <table>
+            <% notes.map(function(note){ %>
+                <tr>
+                    <td>
+                        <%= note.title %>
+                    </td>
+                    <td>
+                        <a href="/edit-note/<%= note.id %>">Edit</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </table>
+    </div>
+</div>
+
+
+</body>
+</html>
